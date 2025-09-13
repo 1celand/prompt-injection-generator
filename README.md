@@ -27,6 +27,7 @@ python3 main.py -gui
 
 ## 扩展阅读
 [如何获取主流大模型的系统提示词](https://xz.aliyun.com/news/18779)
+
 [大模型安全攻防实践 越狱攻击方法与思路分享](https://xz.aliyun.com/news/18770)
 
 ## 时间线
