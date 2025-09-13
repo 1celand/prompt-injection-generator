@@ -235,7 +235,6 @@ class PromptInjectorGUI:
         self.intensity_label.grid(row=0, column=2, padx=5, pady=5, sticky='w')
         self.mutation_scale['command'] = self.update_intensity_label
 
-        # 生成按钮组（仅基础+组合）
         btn_frame = ttk.Frame(root)
         btn_frame.pack(pady=10)
 
@@ -340,7 +339,7 @@ if __name__ == "__main__":
         root.mainloop()
 
     else:
-        print("命令行模式（仅基础+组合）：\n")
+        print("命令行模式：\n")
         
         print("基础版示例:")
         for i in range(2):
