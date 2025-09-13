@@ -32,3 +32,10 @@ python3 main.py -gui
 
 ## 时间线
 2025.9.13    开天劈地，发布初版。
+
+## 联系方式
+以下是我的微信公众号二维码，不定期分享AI安全相关知识，欢迎各位师傅们关注
+
+<img width="360" height="128" alt="image" src="https://github.com/user-attachments/assets/4a4b1b79-73bb-4349-add3-c29a8bd379be" />
+
+
