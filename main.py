@@ -241,7 +241,7 @@ class PromptInjectorGUI:
         ttk.Button(btn_frame, text="基础版（单模板）", command=lambda: self.generate_and_display('basic')).pack(side=tk.LEFT, padx=5)
         ttk.Button(btn_frame, text="组合版（2-3模板）", command=lambda: self.generate_and_display('combo')).pack(side=tk.LEFT, padx=5)
 
-        # 输出区域 - 使用 tk.PanedWindow 实现并列 + 可拖动调整（修复报错）
+        # 输出区域
         output_pane = tk.PanedWindow(root, orient=tk.HORIZONTAL, sashrelief=tk.RAISED, sashwidth=8, bd=2)
         output_pane.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
@@ -306,23 +306,23 @@ class PromptInjectorGUI:
         self.status_bar.config(text=f"已生成第 {len(self.history)} 条 | 模式: {mode} | 强度: {intensity:.1f}")
 
     def copy_mutated(self):
-        content = self.mutated_text.get(1.0, tk.END).strip()
+        content = self.mutated_text。get(1.0, tk.END).strip()
         if content:
             pyperclip.copy(content)
-            messagebox.showinfo("成功", "变异版已复制到剪贴板！")
+            messagebox.showinfo("成功"， "变异版已复制到剪贴板！")
 
     def copy_original(self):
         content = self.original_text.get(1.0, tk.END).strip()
         if content:
             pyperclip.copy(content)
-            messagebox.showinfo("成功", "原始版已复制到剪贴板！")
+            messagebox.showinfo("成功"， "原始版已复制到剪贴板！")
 
     def clear_output(self):
-        self.original_text.delete(1.0, tk.END)
-        self.mutated_text.delete(1.0, tk.END)
+        self.original_text。delete(1.0, tk.END)
+        self.mutated_text。delete(1.0, tk.END)
 
     def copy_history_item(self, event):
-        selection = self.history_listbox.curselection()
+        selection = self.history_listbox。curselection()
         if selection:
             index = selection[0]
             _, mutated = self.history[index]
