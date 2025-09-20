@@ -318,8 +318,8 @@ class PromptInjectorGUI:
             messagebox.showinfo("成功"， "原始版已复制到剪贴板！")
 
     def clear_output(self):
-        self.original_text。delete(1.0, tk.END)
-        self.mutated_text。delete(1.0, tk.END)
+        self.original_text.delete(1.0, tk.END)
+        self.mutated_text.delete(1.0, tk.END)
 
     def copy_history_item(self, event):
         selection = self.history_listbox。curselection()
